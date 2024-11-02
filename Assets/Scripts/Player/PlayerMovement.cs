@@ -487,7 +487,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     IEnumerator StartPogoJump()
     {
-        Debug.Log("POOGO!");
         IsJumping = false;
         IsJumpCut = false;
         IsJumpFalling = false;

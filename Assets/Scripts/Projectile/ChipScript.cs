@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChipScript : MonoBehaviour
@@ -9,11 +10,28 @@ public class ChipScript : MonoBehaviour
     {
         ChipRigidbody = GetComponent<Rigidbody2D>();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Pogoable") &&
+            !(ChipRigidbody.constraints == RigidbodyConstraints2D.FreezeAll))
+        {
+            BreakChip();
+        }
+        
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+        ChipRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+    }
+
+    public void BreakChip()
+    {
+        Destroy(gameObject);
+    }
     
     public void MoveChip(float ChipChargeMultiplier)
     {
-        Debug.Log("Ananasaldırdım");
-        Debug.Log(ChipChargeMultiplier);
         ChipRigidbody.linearVelocity = new Vector2(ChipChargeMultiplier * ChipMoveSpeed, 0);
     }
 }
