@@ -28,6 +28,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     public GameObject PlayerFirePoint;
     public GameObject ChipPrefab;
+    public GameObject PlayerCorpsePrefab;
     #endregion
     
     #region STATE PARAMETERS
@@ -101,7 +102,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     [SerializeField] private Transform FrontWallCheckPoint;
     [SerializeField] private Transform BackWallCheckPoint;
     [SerializeField] private Vector2 WallCheckSize = new(0.5f, 1f);
-
+    public Vector2 SpawnPoint;
     #endregion
 
     #region LAYERS & TAGS
@@ -568,6 +569,12 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     #region COMBAT FUNCTIONS
 
+    public void KillPlayer()
+    {
+        Instantiate(PlayerCorpsePrefab, transform.position, Quaternion.identity);
+        transform.position = SpawnPoint;
+    }
+    
     private void PlayerAttack() //Makes the player attack to the direction that the player looks
     {
             AttackCooldown = PlayerData.AttackCooldown;
