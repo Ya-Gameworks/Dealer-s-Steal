@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5759d6a660e3ac14dbd9a801bf9d7627, type: 3}
+  m_Name: DefaultPlayerMovement
+  m_EditorClassIdentifier: 
+  GravityStrenght: -52
+  GravityScale: 5.3007135
+  FallGravityMultiplier: 2
+  MaxFallSpeed: 20
+  ForceFallSpeed: 1
+  MaxForceFallSpeed: 25
+  CanMove: 1
+  MaxMoveSpeed: 9.5
+  MoveAcceleration: 9.5
+  MoveAccelerationAmount: 50
+  MoveDecceleration: 9.5
+  MoveDeccelerationAmount: 50
+  AirbornAcceleration: 1
+  AirbornDecceleration: 1
+  MaxJumpHeight: 6.5
+  JumpTimeToApex: 0.5
+  JumpAmount: 1
+  PogoJumpForce: 20
+  PogoJumpDuration: 0.5
+  JumpForce: 26
+  JumpCutGravityMultiplier: 3.5
+  JumpApexGravityMultiplier: 1
+  JumpApexDuration: 0
+  JumpApexAccelerationMultiplier: 1
+  MaxJumpApexSpeedMultiplier: 1
+  WallJumpToMoveLerp: 0.075
+  WallJumpDuration: 0.2
+  WallJumpForce: {x: 6, y: 20}
+  WallJumpAssistTime: 0.1
+  WallJumpCooldown: 0.3
+  CanWallJump: 0
+  CanWallGrab: 0
+  WallClimbSpeed: 3
+  CanWallClimb: 0
+  WallSlideSpeed: -12
+  WallSlideAcceleration: 12
+  WallGrabDuration: 5
+  WallLedgeClimbSpeed: 6
+  WallLedgeClimbTime: 0.15
+  LedgeOffJumpDuration: 0.2
+  JumpInputBufferDuration: 0.2
+  AttackInputBufferDuration: 0.2
+  MaximumDashAmount: 0
+  DashSpeed: 20
+  DashFreezeDuration: 0.05
+  DashApexReachTime: 0.15
+  DashEndTime: 0.15
+  DashEndSpeed: {x: 15, y: 15}
+  DashEndToMoveLerp: 0.5
+  DashRefillDuration: 0.1
+  DashInputBufferDuration: 0.1
+  CanEnterCombat: 1
+  PlayerHealth: 0
+  PlayerDamage: 2
+  AttackCooldown: 0.2
