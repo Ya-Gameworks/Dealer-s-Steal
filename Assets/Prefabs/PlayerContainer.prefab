@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7506176174932312797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5693576678364738079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412123201993264552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,9 +103,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 412123201993264552}
     m_Modifications:
+    - target: {fileID: 10038751049371714, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 850992678018674979, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6806031775851962714, guid: a7e77cef0cf1640b69c291551ac3c07b, type: 3}
+    - target: {fileID: 1329547014099663901, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1742379531116317810, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742379531116317810, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2497143766751914937, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602171683434037044, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: PlayerAnims
+      value: 
+      objectReference: {fileID: 1217128406165416598}
+    - target: {fileID: 3185352098587051098, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3193909966056816895, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704272524105259130, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319377648040820531, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361963815052950527, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822784680908415586, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4915288015009130988, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416807292118224879, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6116297444140500617, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
       propertyPath: ChipPrefab
@@ -124,9 +180,17 @@ PrefabInstance:
       value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 6116297444140500617, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: WallLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116297444140500617, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
       propertyPath: GroundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6116297444140500617, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: PlayerCorpsePrefab
+      value: 
+      objectReference: {fileID: 1742379531116317810, guid: 8333732b907524a94a03c19f74dfb25e, type: 3}
     - target: {fileID: 6116297444140500617, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
       propertyPath: PogoableLayer.m_Bits
       value: 128
@@ -175,14 +239,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7521789070847521816, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6952186271236268084, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6489043159672422070, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
       insertIndex: 1
       addedObject: {fileID: 7506176174932312797}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+--- !u!95 &1217128406165416598 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7521789070847521816, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
+  m_PrefabInstance: {fileID: 8684867083018624654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2489205021854212152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6489043159672422070, guid: 64d3ef6213b871e4a91071f31d9017f9, type: 3}
