@@ -18,7 +18,13 @@ public class ChipScript : MonoBehaviour
         {
             BreakChip();
         }
-        
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        {
+            ChipRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+            GetComponent<BoxCollider2D>().usedByEffector = true;
+            gameObject.layer = LayerMask.NameToLayer("Ground");
+        }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
         ChipRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;

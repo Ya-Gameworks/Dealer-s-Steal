@@ -1,0 +1,18 @@
+{
+    "name": "AdvancedRuleTileEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:899d0fc5080a58145b400d474cd9ed03",
+        "GUID:3a9781db4804a9945b9883f3a7c46d45",
+        "GUID:cbdf09464b6b87745be748a67e5a21a0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
