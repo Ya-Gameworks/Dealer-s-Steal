@@ -3,7 +3,7 @@ using UnityEngine;
 public class DiagonalMovingFlyer : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
-    [SerializeField] Vector2 moveDirection = new Vector2(1f, 0.25f);
+    [SerializeField] Vector2 moveDirection = new Vector2(1f, -0.25f);
     [SerializeField] GameObject rightCheck, roofCheck, groundCheck;
     [SerializeField] Vector2 rightCheckSize, roofCheckSize, groundCheckSize;
     [SerializeField] LayerMask groundLayer, wallLayer;

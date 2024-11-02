@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &16975169 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5693576678364738079, guid: 719c3271e7d3741e3832435b7afe50b8, type: 3}
-  m_PrefabInstance: {fileID: 5447441607198088437}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &366050928
 GameObject:
   m_ObjectHideFlags: 0
@@ -22412,7 +22407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlipRotationTime: 0.5
-  CameraFlipTargetTransform: {fileID: 16975169}
+  CameraFlipTargetTransform: {fileID: 331743089743458026}
   CinemachineCameras:
   - {fileID: 1066592928}
   - {fileID: 1900692693}
@@ -22600,7 +22595,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.942272, y: 2.8927698, z: -8.590431}
+  m_LocalPosition: {x: 12.134198, y: 2.89276, z: -8.590431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97645,7 +97640,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1979986763}
+  - {fileID: 5629803659928326493}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1027296877
@@ -97732,7 +97727,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 16975169}
+    TrackingTarget: {fileID: 331743089743458026}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -98586,11 +98581,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7309833866334486334, guid: f4fa192f3da4e124c8947631ed01079c, type: 3}
   m_PrefabInstance: {fileID: 1920171892}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1979986763 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 412123201993264552, guid: 719c3271e7d3741e3832435b7afe50b8, type: 3}
-  m_PrefabInstance: {fileID: 5447441607198088437}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2080474828
 GameObject:
   m_ObjectHideFlags: 0
@@ -98757,6 +98747,26 @@ PrefabInstance:
 --- !u!1001 &5447441607198088437
 PrefabInstance:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1431700047731039553}
+  m_Layer: 8
+  m_Name: CollisionChecks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &331743089743458026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412958449378738486}
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
