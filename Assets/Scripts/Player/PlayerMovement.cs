@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : Singleton<PlayerMovement>
 {
+    public Animator animator;
+
     //Scriptable object which holds all the player's movement parameters.
     public PlayerData PlayerData;
 
@@ -209,6 +211,9 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void Update()
     {
+        animator.SetFloat("Speed", PlayerMovement.Instance.ActionInput.x);
+        animator.SetBool("isJumping", IsJumping);
+
         if (!PlayerData.CanMove) return;
         RunTimers(); //Run timers
         if (ActionInput.x != 0) CheckDirectionToFace(ActionInput.x > 0); //Set players facing direction
