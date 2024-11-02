@@ -21921,7 +21921,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.024819, y: 2.8927698, z: -8.590431}
+  m_LocalPosition: {x: 9.942272, y: 2.8927698, z: -8.590431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22259,6 +22259,11 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!95 &1402479936 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1217128406165416598, guid: 719c3271e7d3741e3832435b7afe50b8, type: 3}
+  m_PrefabInstance: {fileID: 5447441607198088437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403180292
 GameObject:
   m_ObjectHideFlags: 0
@@ -22995,6 +23000,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6672678521516892602, guid: 719c3271e7d3741e3832435b7afe50b8, type: 3}
+      propertyPath: PlayerAnims
+      value: 
+      objectReference: {fileID: 1402479936}
     - target: {fileID: 6965085565282112252, guid: 719c3271e7d3741e3832435b7afe50b8, type: 3}
       propertyPath: m_Layer
       value: 8
