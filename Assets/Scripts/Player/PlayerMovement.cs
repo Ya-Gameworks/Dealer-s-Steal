@@ -107,6 +107,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     #region LAYERS & TAGS
     [Header("Layers & Tags")] 
     [SerializeField] private LayerMask GroundLayer;
+    [SerializeField] private LayerMask WallLayer;
     [SerializeField] private LayerMask DamageableLayer;
     [SerializeField] private LayerMask PogoableLayer;
 
@@ -724,7 +725,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     public bool CheckPlayerGroundCollision()
     {
-        return Physics2D.OverlapBox(GroundCheckPoint.position, GroundCheckSize, 0, GroundLayer) && PlayerData.JumpAmount > 0;
+        return (Physics2D.OverlapBox(GroundCheckPoint.position, GroundCheckSize, 0, GroundLayer) ||
+                Physics2D.OverlapBox(GroundCheckPoint.position, GroundCheckSize, 0, WallLayer))  && PlayerData.JumpAmount > 0;
     }
     
     private bool CanWallJumpAssist() //Checks if the player can have an assist in wall jump
