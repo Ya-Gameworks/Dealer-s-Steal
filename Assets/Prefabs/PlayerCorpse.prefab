@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4239444165158262691}
   m_Layer: 3
   m_Name: PlayerCorpse
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 7cd774f1cab18954ab27d36691ceb528, type: 2}
+  m_Material: {fileID: 6200000, guid: 9700283a0f10e49b993c7184eced6f85, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -96,7 +96,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 7cd774f1cab18954ab27d36691ceb528, type: 2}
+  m_Material: {fileID: 6200000, guid: 9700283a0f10e49b993c7184eced6f85, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

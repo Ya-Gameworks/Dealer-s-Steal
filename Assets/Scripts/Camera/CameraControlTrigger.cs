@@ -23,7 +23,7 @@ public class CameraControlTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             if (customInspectorObjects.PanCameraOnContact)
             {
@@ -34,7 +34,7 @@ public class CameraControlTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             if (customInspectorObjects.SwapCameras && customInspectorObjects.cameraOnLeft && customInspectorObjects.cameraOnRight)
             {
